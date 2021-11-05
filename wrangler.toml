@@ -1,0 +1,17 @@
+name = "cfw-aad"
+type = "javascript"
+zone_id = ""
+account_id = "38fd41a1e3b535110b152d05ff7b9bb8"
+route = ""
+workers_dev = true
+compatibility_date = "2021-11-04"
+
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"
+
+[vars]
+AUTHORITY = "https://login.microsoftonline.com/common"
+AUDIENCE = "api://daaf9e75-86d0-4e2f-bf8c-6c762711fa0f"
+OBO_CLIENT_ID = "daaf9e75-86d0-4e2f-bf8c-6c762711fa0f"
